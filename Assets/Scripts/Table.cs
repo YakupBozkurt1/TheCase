@@ -34,7 +34,7 @@ public class Table : MonoBehaviour
             {
                 if (cardsonTable.Count >= 2)
                 {
-                    mainGame.GameRules(false);
+                    Invoke("GameRulesForBot", 0.5f);
                 }
                 mainGame.CheckforGameOver();
                 mainGame.CheckforEmptyHand();
@@ -45,5 +45,10 @@ public class Table : MonoBehaviour
     void BotPlaysforTable() //To use invoke, i created a function to call the botplays from another script
     {
         mainGame.BotPlays();
+    }
+
+    void GameRulesForBot()
+    {
+        mainGame.GameRules(false);
     }
 }

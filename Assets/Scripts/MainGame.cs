@@ -401,7 +401,7 @@ public class MainGame : MonoBehaviour
     {
         tablelayout.spacing  = -30 - tableCardsGroup.transform.childCount * 0.7f;
     }
-    
+
     public void HandSorter(float startValue, float endValue)
     {
         if (timeElapsed < lerpDuration)     //Checks if the animation time is reached
